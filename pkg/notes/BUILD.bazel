@@ -11,7 +11,7 @@ go_library(
     deps = [
         "@com_github_go_kit_kit//log:go_default_library",
         "@com_github_go_kit_kit//log/level:go_default_library",
-        "@com_github_google_go_github//github:go_default_library",
+        "@com_github_google_go_github//v21/github:go_default_library",
         "@com_github_pkg_errors//:go_default_library",
     ],
 )
@@ -24,7 +24,7 @@ go_test(
     ],
     embed = [":go_default_library"],
     deps = [
-        "@com_github_google_go_github//github:go_default_library",
+        "@com_github_google_go_github//v21/github:go_default_library",
         "@com_github_stretchr_testify//require:go_default_library",
         "@org_golang_x_oauth2//:go_default_library",
     ],
